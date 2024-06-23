@@ -1,0 +1,446 @@
+* {
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {  
+    /* background-color: #ffe0e0; */
+    background-color: #ffeeee;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.23dvw;
+    /* font-size: 25px; */
+    font-weight: 400;
+    /* width: 99vw; */
+}
+
+/* ____________________ N A V - B A R  _________________________ */
+nav {
+    z-index: 5;
+    width: 96%;
+    font-weight: 500;
+    font-size: 17px;
+    position: fixed;
+    padding: 30px 30px;
+    text-decoration: none;
+    color: white;
+    /* text-shadow: rgba(255, 255, 255, 0.486) 1px 0 10px; */
+
+    display: flex;
+    justify-content: space-between;
+}
+nav div img{
+    border-radius: 50%;
+    background-size: cover;
+    
+    /* background-position: center; */
+    width: 43px;
+}
+nav .right {
+    border-radius: 50rem;
+    background-color: rgba(255, 255, 255, 0.418);
+    backdrop-filter: blur(20px);
+    padding: 12px 3px;
+    /* text-shadow: rgba(255, 255, 255, 0.733) 1px 0 10px; */
+
+}
+
+nav a {
+    color: #942f2f;
+    text-decoration: none;
+    padding: 10px 30px;
+
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #942f2fce;
+    border-radius: 50rem;
+    transition: 350ms;
+    text-shadow: none;
+
+}
+
+/* ____________________H E A D E R  __________________________ */
+header {
+    height: 100svh;
+}
+
+header img {
+    height: 100svh;
+    width: 100svw;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+header .name {
+    font-weight: 400;
+    font-style: normal;
+    font-size: min(920px, 11dvw);
+    /* font-size: 800%; */
+
+
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-wrap: nowrap;
+}
+
+header .intro_txt {
+    height: 200px;
+    margin: 10px;
+    position: absolute;
+    bottom: 14vw;
+    right: max(10px, 18%);
+}
+
+header .intro {
+    height: 70px;
+    width: 70px;
+}
+
+header .intro_txt div {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: large;
+    padding-left: 28px;
+    color: white;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+/* MAIN _______________________________________________________________*/
+main section {
+    margin-top: 2%;
+    margin-bottom: 7%;
+}
+
+main h1 {
+    font-weight: 400;
+    font-size: 3dvw;
+    color: #803636;
+}
+
+/* __________________________ABOUT ME _______________________________ */
+.about {
+    margin: 0 10%;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.first {
+    margin-top: 100px;
+}
+
+.about .left {
+    font-weight: 300;
+    width: 200%;
+    font-size: 150%;
+}
+
+.about .right {
+    color: #955151;
+    padding-left: 20px;
+    font-weight: 240;
+    font-size: 1.3rem;
+}
+
+.skills {
+    font-size: medium;
+    display: flex;
+}
+
+.skills .division {
+    padding: 2rem;
+}
+
+.skills .division h2 {
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+.skills .division {
+    padding: 2rem;
+}
+
+main h1 {
+    margin: 0 10%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+
+}
+
+/* _______________________  PROJECTS ______________________________ */
+.projects {
+    background-color: #4e2e2e;
+    height: max(1080px,100vh);
+    width: 100vw;
+    border-radius: 3rem;
+}
+
+.projects div {
+    margin: 0 10%;
+    position: relative;
+    z-index: 2;
+}
+
+.projects img {
+    border-radius: 3rem;
+    width: 100vw;
+    height: max(1080px,100vh);
+    object-fit: cover;
+    z-index: 0;
+    position: absolute;
+}
+
+.projects div h1,
+.projects div h5,
+.projects div a {
+
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects div h1 {
+    position: relative;
+    top: 25px;
+    font-weight: 400;
+    font-size: 250%;
+    color: #ffe0e0;
+    padding: 20px;
+}
+
+.projects div div {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects div div div {
+    height: 23rem;
+    width: 25rem;
+    border-radius: 20px;
+    background-color: rgb(34, 19, 19);
+    padding: 10px;
+    margin: 20px;
+}
+
+.projects h5 {
+    padding: 10px;
+    font-size: 200%;
+    font-weight: 200;
+}
+
+.projects a {
+    left: 45%;
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #d18787;
+    text-decoration: none;
+    border: 4px solid rgba(255, 204, 0, 0);
+}
+
+.projects a:hover {
+    border: 4px solid rgb(230, 181, 109);
+}
+
+ /* _______________________ EXPERIENCE___________________________________  */
+.experience {
+    margin: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience h1 {
+    font-size: 4.5rem;
+}
+
+.exp_tab {
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp_tab .box {
+    border-radius: 30px;
+    padding: 55px;
+    margin: 10px;
+    width: 95%;
+    background-color: white;
+}
+
+.exp_tab h2 {
+    color: #942f2f;
+    font-size: 2.6rem;
+}
+
+.cv a {
+    padding: 18px;
+    border-radius: 50rem;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #ffbe92;
+    background-color: #693030;
+}
+
+.cv {
+    margin: 24px;
+}
+
+.cv a:hover {
+    border: 5px solid #ffbe92;
+}
+
+/* ___________________________ WORK TOGATHER_____________________________ */
+.contact {
+    box-sizing: border-box;
+    background-color: #693030;
+    color: white;
+    height: max(800px,100svh);
+    width: 100svw;
+    padding: 6% 9%;
+    display: flex;
+}
+.contact div{
+    width: 50%;
+    /* padding: 4px; */
+}
+.contact .heading {
+    font-size: 5dvw;
+    /* padding: 10rem 20rem; */
+}
+.contact .heading span{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+
+}
+.contact .heading span img{
+    height: 4.5dvw;
+    margin-right: 23px;
+}
+
+hr {
+    opacity: 20%;
+}
+.contact .left .heading .hr{
+    padding: 0;
+    opacity: 60%;
+    width: 180%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact .btns {
+    /* margin: 4% 20%; */
+    display: flex;
+    font-size: 80%;
+}
+
+.contact .btns a {
+    padding: 27px;
+    margin-right: 8%;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    border-radius: 50rem;
+    color: white;
+    text-decoration: none;
+}
+
+.contact .btns a:hover {
+    background-color: #803636;
+}
+.contact .left .icons{
+    padding: 0 15%;
+    width:70%;
+    display: flex;
+    justify-content: space-evenly;
+    position:relative;
+    top: 5rem;
+}
+.contact .icons a{
+    opacity: 70%;
+    display: flex;
+    align-items:center ;
+    padding: 10px;
+}   
+.contact .icons a:hover{
+    opacity: 100%;
+    padding: none;
+    scale: 110%;
+}   
+.contact .icons a img{
+    width:35px;
+    height: 35px;
+    filter: invert(100%) brightness(200%);
+}
+.contact .right {
+    box-sizing:border-box ;
+    padding-left: 9%;
+    display: flex;
+    flex-direction: column;
+}
+.contact .right input{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-top:3%;
+    background-color: transparent;
+    font-size: 3.2dvh;
+    color: white;
+    border:none;
+    border-bottom: 1px solid hsla(0, 45%, 67%, 0.286);
+    background-color: none;
+}
+.contact .right input:focus{
+    outline: none;
+    border-bottom: 1px solid #d18787;
+}
+.contact .right input::placeholder{
+    color: #d3b0b0; /* Change the placeholder text color */
+    opacity: 1; /* Ensure the color is applied */
+    font-size: 75%;
+}
+.contact .right button{
+    position: relative;
+    top:4%;
+    left:70%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    font-size: 120%;
+    border: none;
+    background-color:#d18787 ;
+}
+
+.contact .right button:hover{
+    background-color:#ffe0e0 ;
+    transition: 500ms;
+    font-size: 130%;
+}
+/* ___________________________ WORK TOGATHER_____________________________ */
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    padding:20% 5px ;
+    border-radius: 50rem;
+    border:2px solid #693030;
+    background-color:#f5e2e2;
+    margin: 10px;
+    text-align: center;
+    transition: 100ms;
+}
+.skill:hover{
+    background-color:#e9bfbf;
+    
+}
